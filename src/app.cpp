@@ -12,14 +12,14 @@ app::app(){}
 
 void app::app_init(){
 
-    DeribitAPIClient client("AS5Gz59F", "j7R9ctC3wEk2sDz0n8VV3V0iEJXgYa4hBqUtygrQn3U");
+    DeribitAPIClient client("api id", "api key"); // <<-- yoho here you need to share your secrets
 
         try {
     if (client.authenticate()) {
        
         std::cout << "[+] Successfully Authenticated" <<std::endl; 
     } else {
-        std::cerr << "Authentication failed.\n";
+        std::cerr << "Authentication failed. \n Probably you forgot to add you api key and id if not than it is something else entirely!!\n And if yes than go to app.cpp and add your secrets \n";
         std::cout<< "PLEASE RETRY " << std::endl;
         throw std::exception();
     }
