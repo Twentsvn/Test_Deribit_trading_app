@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-   // DeribitAPIClient client("AS5Gz59F", "j7R9ctC3wEk2sDz0n8VV3V0iEJXgYa4hBqUtygrQn3U");
+   
 
    // if (client.authenticate()) {
    //     client.get_access_token();
