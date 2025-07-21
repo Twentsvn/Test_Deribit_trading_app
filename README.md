@@ -12,3 +12,4 @@ build
 - You need to generate keys for the authentication from the testDeribit platform (And harcode it :) in the main.cpp  
 - It works on `RESTAPI` and `wss` for the communication with the Deribit Platform.
 - It can place order , cancel order , subscribe and a lot more and you can add too (but why).
+
