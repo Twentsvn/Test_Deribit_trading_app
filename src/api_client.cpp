@@ -16,8 +16,12 @@ static size_t WriteCallback(void * contents , size_t size , size_t nmemb ,std::s
 
 // constructor
 DeribitAPIClient::DeribitAPIClient(const std::string & client_id , const std::string & client_secret )
-    : client_id(client_id),client_secret(client_secret) {}
-    
+    : client_id(client_id),client_secret(client_secret) {}   // name shadowing problem can arise we list inisialisation was not done here if i dont want to do the list inisialisation i can use  
+                                                            /*  using this * we can mitigate the name shadowing problem or we can use different var names in our constructor always!!
+                                                            this -> client_id = client_id;     
+                                                            this -> client_secret = client_secret;
+                                                            */
+                                                                
 
 bool DeribitAPIClient::authenticate(){
     CURLcode ret;
